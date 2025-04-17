@@ -57,7 +57,7 @@ class SnakeGameAI:
         if self.food in self.snake:
             self._place_food()
     
-    def play_step(self):
+    def play_step(self, accion):
         self.frame_iteration += 1
         #leer evento
         for event in pygame.event.get():
